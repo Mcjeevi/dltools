@@ -1,0 +1,21 @@
+<div class="container-fluid text-center"> Wellcome to Cisco</div>
+<div ng-controller="myController" class="search-tool">
+    <div angucomplete-alt
+            id="books"
+            selected-object="addSkill"
+            class="angucomplete-holder"
+            placeholder="Search your api"
+            maxlength="50"
+            pause="100"
+            selected-object="selectedApi"
+            local-data="myBooks"
+            search-fields="bookName"
+            title-field="bookName"
+            minlength="1"
+            input-class="form-control"
+            match-class="highlight">
+    </div>
+    <div ng-show="selectedApi">
+        <b>You selected</b>: {{selectedBook.originalObject.bookName}}
+    </div>
+</div>

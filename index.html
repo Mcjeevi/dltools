@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Home</title>
+    <!-- Library CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/angucomplete-alt@3.0.0/angucomplete-alt.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/cui-standard.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- End Library CSS -->
+    <script data-require="angular.js@1.4.8" data-semver="1.4.8" src="https://code.angularjs.org/1.4.8/angular.js"></script>
+    <script data-require="ui-router@0.2.15" data-semver="0.2.15" src="https://cdn.rawgit.com/angular-ui/ui-router/805e69bae319e922e4d3265b7ef565058aaff850/release/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angucomplete-alt/2.5.0/angucomplete-alt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body ng-app="myApp" class="cui">
+<!-- Wrap -->
+<div id="wrap" class="content-fluid">
+    <main>
+        <div ng-include="'assets/templates/header.html'"></div>
+        <ui-view></ui-view>
+        <div ng-include="'assets/templates/footer.html'"></div>
+    </main>
+
+</div>
+
+</body>
+</html>
